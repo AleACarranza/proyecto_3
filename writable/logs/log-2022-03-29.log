@@ -1,0 +1,27 @@
+CRITICAL - 2022-03-29 14:37:34 --> Invalid file: contactoPrueba.php
+#0 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contactoPrueba....')
+#1 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('contactoPrueba', Array, true)
+#2 C:\desarrollo\htdocs\proyecto_3\app\Controllers\Home.php(13): view('contactoPrueba')
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#4 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-29 14:37:39 --> Invalid file: contactoPrueba.php
+#0 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contactoPrueba....')
+#1 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('contactoPrueba', Array, true)
+#2 C:\desarrollo\htdocs\proyecto_3\app\Controllers\Home.php(13): view('contactoPrueba')
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#4 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-29 14:37:52 --> Invalid file: contactoPrueba.php
+#0 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contactoPrueba....')
+#1 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('contactoPrueba', Array, true)
+#2 C:\desarrollo\htdocs\proyecto_3\app\Controllers\Home.php(13): view('contactoPrueba')
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#4 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
