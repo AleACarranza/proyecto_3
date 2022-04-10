@@ -8,6 +8,6 @@ Log In
 
 <?= $this->section('contenido'); ?>
 
-
+Este es el login, jijijija
 
 <?= $this->endSection(); ?>
