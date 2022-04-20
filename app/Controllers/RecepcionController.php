@@ -4,29 +4,27 @@ namespace App\Controllers;
 
 use App\Models\UsuariosCRUDModel;
 
-class AdminController extends BaseController
+class RecepcionController extends BaseController
 {
     public function index() {
 
-        $Crud = new UsuariosCRUDModel();
-        $datos = $Crud->getUsuarios();
-        // Al momento de redireccionar con al crear un nuevo usuario, nos trae el mensaje
-        $mensaje = session('mensaje');
+        //$Crud = new UsuariosCRUDModel();
+        //$datos = $Crud->getUsuarios();
+        //
+        //// Al momento de redireccionar con al crear un nuevo usuario, nos trae el mensaje
+        //$mensaje = session('mensaje');
+//
+        //$data = [
+        //    'titulo'  => "Admin View - Usuarios y Roles",
+        //    'datos'   => $datos,
+        //    'mensaje' => $mensaje
+        //];
+//
+        //if (session('rol') != 'Admin') {
+        //    return redirect()->to(base_url('/citas_view'));
+        //}
 
-        $data = [
-            'titulo'  => "Admin View - Usuarios y Roles",
-            'datos'   => $datos,
-            'mensaje' => $mensaje
-        ];
-
-        if (session('rol') != 'Admin') {
-            return redirect()->to(base_url('/citas_view'));
-        }
-
-        echo view('admin_view/header', $data);
-        echo view('admin_view/menu');
-        echo view('admin_view/index');
-        echo view('admin_view/footer');
+        return view('recepcion_view/recepcion');
     }
 
     public function crearNuevoUsuario() {

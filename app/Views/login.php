@@ -1,6 +1,4 @@
-<?= $this->extend('layouts/layout'); ?>
-
-
+<?= $this->extend('layouts/base_login'); ?>
 
 <?= $this->section('titulo'); ?>
 Log In
@@ -11,15 +9,16 @@ Log In
     <div class="login-box">
       <img src="<?php echo base_url(); ?>/public/img/icono_salud_bajio_dental.jpg" class="avatar" alt="Avatar Image">
       <h1>Login Salud Bajío Dental</h1>
-      <form>
+      <form action="<?php echo base_url('/login') ?>" method="POST">
         <!-- USERNAME INPUT -->
         <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" placeholder="Ingresar Usuario" class="form-control">
+        <input autocomplete="off" type="text" name="usuario" placeholder="Ingresar Usuario" class="form-control" required="">
         <!-- PASSWORD INPUT -->
-        <label for="contrasena">Password</label>
-        <input type="password" id="contrasena" placeholder="Ingresar Contraseña" class="form-control">
+        <label for="password">Contraseña</label>
+        <input autocomplete="off" type="password" name="password" placeholder="Ingresar Contraseña" class="form-control" required="">
         <input type="submit" value="Ingresar">
       </form>
     </div>
 
+    
 <?= $this->endSection(); ?>

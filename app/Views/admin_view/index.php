@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row">
         <div class="col-sm-12 ">
@@ -57,7 +58,27 @@
                             </tr>
                     <?php endforeach; ?>
                 </table>
-            </div>
+            </div> 
         </div>
     </div>
+</div>
+
+<div class="d-flex justify-content-end align-items-center mr-3">
+    <h5 class="mb-0">Bienvenido <?php echo session('usuario') ?>, Su rol es: <span class="
+    <?php if (session('rol') == 'Admin') {
+        echo 'text-danger';
+    }?>
+    
+    <?php if (session('rol') == 'Recepción') {
+        echo 'text-success';
+    }?>
+
+    <?php if (session('rol') == 'Doctor') {
+        echo 'text-primary';
+    }?>
+
+    "><?php echo session('rol') ?></span> </h5>
+    <ul class="nav-item h1 ml-3 mr-0 p-0">
+        <a class="btn btn-outline-danger" href="<?php echo base_url('/cerrar_sesion') ?>">Cerrar Sesión</a>
+    </ul>
 </div>

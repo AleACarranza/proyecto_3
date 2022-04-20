@@ -10,16 +10,16 @@
 
   <ul class="nav justify-content-end">
     <li class="nav-item h1">
-      <a class="btn btn-outline-dark" href="#">Administración/Recepción</a>
+      <a class="btn btn-outline-dark" href="<?php echo base_url() . '/recepcion_view'; ?>">Recepción</a>
     </li>
     <li class="nav-item h1 ml-3">
-      <a class="btn btn-outline-dark" href="#">Usuarios y Roles</a>
+      <a class="btn btn-outline-dark" href="<?php echo base_url().'/admin_view'; ?>">Usuarios y Roles</a>
     </li>
     <li class="nav-item h1 ml-3">
-      <a class="btn btn-outline-dark" href="#">Pacientes</a>
+      <a class="btn btn-outline-dark" href="<?php echo base_url().'/pacientes_view'; ?>">Pacientes</a>
     </li>
     <li class="nav-item h1 ml-3">
-      <a class="btn btn-outline-dark" href="#">Citas</a>
+      <a class="btn btn-outline-dark" href=""<?php echo base_url().'/citas_view'; ?>"">Citas</a>
     </li>
     <li class="nav-item h1 ml-3">
       <a class="btn btn-outline-dark" href="#">Tratamientos</a>
