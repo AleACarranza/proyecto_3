@@ -4,6 +4,7 @@
     <script src="<?php echo base_url(); ?>/public/js/jquery-3.6.0.min.js"></script>
     <script src="<?php echo base_url(); ?>/public/js/popper.min.js"></script>
     <script src="<?php echo base_url(); ?>/public/js/bootstrap/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/cf56801d52.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

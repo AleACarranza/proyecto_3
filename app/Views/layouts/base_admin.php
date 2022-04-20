@@ -19,7 +19,7 @@
   <br>
   <div class="d-flex justify-content-between align-items-center ml-3 mr-3">
     <div class="d-flex align-items-center">
-      <img class="img-small" src="public\img\icono_salud_bajio_dental.jpg" alt="LogoClinica">
+      <img class="img-small" src="<?php echo base_url(); ?>/public/img/icono_salud_bajio_dental.jpg" alt="LogoClinica">
 
       <h2 class="font-coolvetica ml-2 font-weight-bold">Salud Bajio Dental</h2>
     </div>
@@ -43,7 +43,7 @@
         <a class="btn btn-outline-dark" href="#">Tratamientos</a>
       </li>
       <li class="nav-item h1 ml-3">
-        <a class="btn btn-outline-dark" href="#">Dentistas</a>
+        <a class="btn btn-outline-dark" href="<?php echo base_url(). '/doctores_view' ?>">Doctores</a>
       </li>
     </ul>
   </div>
@@ -74,6 +74,8 @@
   <script src="<?php echo base_url(); ?>/public/js/jquery-3.6.0.min.js"></script>
   <script src="<?php echo base_url(); ?>/public/js/popper.min.js"></script>
   <script src="<?php echo base_url(); ?>/public/js/bootstrap/bootstrap.js"></script>
+
+  <script src="https://kit.fontawesome.com/cf56801d52.js" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 

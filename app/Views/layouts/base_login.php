@@ -17,9 +17,6 @@
 
     <?= $this->renderSection('contenido') ?>
 
-    
-
-
 
     <script src="<?php echo base_url(); ?>/public/js/jquery-3.6.0.min.js"></script>
     <script src="<?php echo base_url(); ?>/public/js/popper.min.js"></script>

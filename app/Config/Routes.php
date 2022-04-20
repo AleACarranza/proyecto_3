@@ -57,6 +57,12 @@ $routes->get('/eliminarUsuario/(:any)', 'AdminController::eliminarUsuario/$1');
 $routes->add('/pacientes_view', 'PacientesController::index');
 
 /**
+ * Rutas Doctores
+ */
+$routes->add('/doctores_view', 'DoctoresController::index');
+
+
+/**
  * Rutas Citas
  */
 $routes->add('/citas_view', 'CitasController::index');
@@ -65,6 +71,10 @@ $routes->add('/citas_view', 'CitasController::index');
  * Rutas Recepción
  */
 $routes->add('/recepcion_view', 'RecepcionController::index');
+$routes->add('/view_crear_recepcion', 'RecepcionController::view_crear_recepcion');
+$routes->add('/crearNuevoRegistroRecepcion', 'RecepcionController::crearNuevoRegistroRecepcion');
+$routes->get('/actualizar_recepcion/(:any)', 'RecepcionController::getRecepcionInfo/$1');
+$routes->get('/editar_recepcion', 'RecepcionController::updateRecepcionInfo');
 
 
 

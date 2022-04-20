@@ -76,7 +76,7 @@ class Filters extends BaseConfig
         ],
         "SessionDoctor" => [
             "before" => [
-                "/pacientes_view",
+                "/pacientes_view"
             ]
         ]
     ];
