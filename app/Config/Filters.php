@@ -23,6 +23,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'SessionAdmin'  => \App\Filters\SessionAdmin::class,
+        'SessionDoctor' => \App\Filters\SessionDoctor::class
     ];
 
     /**
@@ -64,5 +66,18 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        "SessionAdmin" => [
+            "before" => [
+                "/admin_view",
+                "/pacientes_view",
+                "/citas_view"
+            ],
+        ],
+        "SessionDoctor" => [
+            "before" => [
+                "/pacientes_view",
+            ]
+        ]
+    ];
 }

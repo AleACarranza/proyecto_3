@@ -28,8 +28,6 @@
 
 ?>
 
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -92,8 +90,8 @@
 					
                 </select>
 
-				<label class="font-weight-bold" for="contrasena">Contraseña</label>
-				<input type="password" name="contrasena" id="contrasena" class="form-control" value="<?php echo $contrasena ?>">
+				<label class="font-weight-bold" for="contrasena">Contraseña</label> 
+				<input type="password" name="contrasena" id="contrasena" class="form-control" required="">
 
 				<label class="font-weight-bold" for="estado">Estado</label>
 				<select name="estado" id="estado" class="fit-jala custom-select">

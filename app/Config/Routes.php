@@ -37,6 +37,8 @@ $routes->setAutoRoute(true);
  */
 
 $routes->get('/', 'LoginController::index');
+$routes->post('/login', 'LoginController::login');
+$routes->get('/cerrar_sesion', 'LoginController::cerrar_sesion');
 
 /**
  * Rutas Admin
@@ -49,8 +51,20 @@ $routes->post('/crearNuevoUsuario', 'AdminController::crearNuevoUsuario');
 $routes->post('/actualizarUsuario', 'AdminController::actualizarUsuario');
 $routes->get('/eliminarUsuario/(:any)', 'AdminController::eliminarUsuario/$1');
 
+/**
+ * Rutas Pacientes
+ */
+$routes->add('/pacientes_view', 'PacientesController::index');
 
+/**
+ * Rutas Citas
+ */
+$routes->add('/citas_view', 'CitasController::index');
 
+/**
+ * Rutas Recepción
+ */
+$routes->add('/recepcion_view', 'RecepcionController::index');
 
 
 
