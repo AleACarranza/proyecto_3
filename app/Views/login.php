@@ -1,10 +1,14 @@
 <?= $this->extend('layouts/base_login'); ?>
 
 <?= $this->section('titulo'); ?>
+
 Log In
+
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
+
+  
 
     <div class="login-box">
       <img src="<?php echo base_url(); ?>/public/img/icono_salud_bajio_dental.jpg" class="avatar" alt="Avatar Image">

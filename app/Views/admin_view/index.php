@@ -4,8 +4,11 @@
         <div class="col-sm-12 ">
             <form class="d-flex flex-column" method="POST" action="<?php echo base_url(). '/crearNuevoUsuario' ?> ">
                 <label class="font-weight-bold" for="usuario">Usuario</label>
-                <input type="text" name="usuario" id="usuario" class="form-control">
-
+                <div class="d-flex justify-content-between align-items-center">
+                    <input type="text" name="usuario" id="usuario" class="form-control">
+                    <i class="fa-solid fa-user-astronaut fa-2xl ml-3 mr-3"></i>
+                </div>
+                <i class="fa-light fa-user-cowboy"></i>
                 <label class="font-weight-bold" for="rol">Rol</label>
                 <select name="rol" id="rol" class="fit-jala custom-select">
                     <option value="Admin" selected>Admin</option>
@@ -14,8 +17,10 @@
                 </select>
 
                 <label class="font-weight-bold" for="contrasena">Contraseña</label>
-                <input type="password" name="contrasena" id="contrasena" class="form-control">
-
+                <div class="d-flex justify-content-between align-items-center">
+                    <input type="password" name="contrasena" id="contrasena" class="form-control fa-solid fa-circle-minus fa-lg"></input>
+                    <i class="fa-solid fa-lock fa-2xl ml-3 mr-3"></i>
+                </div>
                 <label class="font-weight-bold" for="estado">Estado</label>
                 <select name="estado" id="estado" class="fit-jala custom-select">
                     <option value="Activo" selected>Activo</option>
@@ -23,7 +28,9 @@
                 </select>
 
                 <br>
-                <button class="btn btn-primary fit-jala">Guardar</button>
+                <button class="btn btn-primary fit-jala">Guardar
+                <i class="fa-solid fa-floppy-disk ml-2"></i>
+                </button>
             </form>
         </div>
     </div>
@@ -50,10 +57,14 @@
                                 <td>**********</td>
                                 <td class="<?php $color = $key->estado == "Activo" ? "text-success" : "text-danger"; echo $color; ?>"><?php echo $key->estado ?></td>
                                 <td>
-                                    <a href="<?php echo base_url(). '/obtenerIdUsuario/'.$key->id_usuario  ?>" class="btn btn-warning btn-sm text-white">Editar</a>
+                                    <a href="<?php echo base_url(). '/obtenerIdUsuario/'.$key->id_usuario  ?>" class="btn btn-warning btn-sm text-white">Editar
+                                    <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                                    </a>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url(). '/eliminarUsuario/'.$key->id_usuario  ?>" class="btn btn-danger btn-sm">Eliminar</a>
+                                    <a href="<?php echo base_url(). '/eliminarUsuario/'.$key->id_usuario  ?>" class="btn btn-danger btn-sm">Eliminar
+                                    <i class="fa-solid fa-circle-minus fa-lg"></i>
+                                    </a>
                                 </td>
                             </tr>
                     <?php endforeach; ?>

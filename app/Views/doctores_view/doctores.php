@@ -23,6 +23,6 @@ Doctores
 
 <?= $this->section('contenido'); ?>
 
-    <h3>Ho l A</h3>
+    <h3>Estamos en Doctores, ponte buso</h3>
 
 <?= $this->endSection(); ?>

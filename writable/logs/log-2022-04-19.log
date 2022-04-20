@@ -178,3 +178,36 @@ CRITICAL - 2022-04-19 20:41:56 --> view(): Argument #2 ($data) must be of type a
 #3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-04-19 22:01:38 --> Undefined variable $datos
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\recepcion_view\recepcion.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 71)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('recepcion_view/...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\RecepcionController.php(27): view('recepcion_view/...')
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\RecepcionController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecepcionController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-19 22:07:31 --> Undefined variable $key
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\recepcion_view\recepcion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 48)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('recepcion_view/...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\RecepcionController.php(27): view('recepcion_view/...')
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\RecepcionController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecepcionController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-19 22:07:53 --> Undefined variable $key
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\recepcion_view\recepcion.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 50)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('recepcion_view/...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\RecepcionController.php(27): view('recepcion_view/...')
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\RecepcionController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecepcionController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

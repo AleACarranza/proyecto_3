@@ -12,7 +12,6 @@ $this->extend($base);
 
 ?>
 
-
 <?= $this->section('page_title'); ?>
 Citas View
 <?= $this->endSection(); ?>
@@ -23,6 +22,6 @@ Citas
 
 <?= $this->section('contenido'); ?>
 
-    <h3>Ho l A</h3>
+    <h3>Estamos en citas, ponte buso</h3>
 
 <?= $this->endSection(); ?>
