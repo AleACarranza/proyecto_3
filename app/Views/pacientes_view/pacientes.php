@@ -9,6 +9,34 @@
 </head>
 <body>
     Pacientes
+    <div class="container">
+        <table class="table table-light">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Género</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Género</td>
+                    <td>Fecha Nacimiento</td>
+                    <td>Teléfono</td>   
+                    <td>Más información</td>
+                    <td>Editar</td>
+                    <td>Borrar</td>
+                    <td>Nueva Cita</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
 <?php 
