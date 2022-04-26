@@ -28,6 +28,32 @@ class RecepcionController extends BaseController
         return view('recepcion_view/recepcion', $data);
     }
 
+    public function view_mas_informacion_recepcion($id_recepcionista) {
+
+        $data = [
+            "id_recepcionista" => $id_recepcionista
+        ];
+
+        
+
+        $InfoRecepcionInfo = new RecepcionCRUDModel();
+        $InfoData = $InfoRecepcionInfo->getRecepcionGeneralInfo($data);
+
+        $dataDom = [
+            "id_domRecepcionista" => $InfoData['0']['id_domRecepcionista']
+        ];
+
+        $InfoRecepcionDomInfo = new RecepcionCRUDModel();
+        $InfoDataDom = $InfoRecepcionDomInfo->getRecepcionDomInfo($dataDom);
+
+        $datosRecepcion = [
+            "datos" => $InfoData,
+            "datos_dom" => $InfoDataDom
+        ];
+
+        return view('recepcion_view/mas_informacion_recepcion', $datosRecepcion);
+    }
+
     public function view_crear_recepcion() {
         return view('recepcion_view/crear_recepcion');
     }
@@ -82,55 +108,100 @@ class RecepcionController extends BaseController
             "id_recepcionista" => $id_recepcionista
         ];
 
+        
+
         $InfoRecepcionInfo = new RecepcionCRUDModel();
         $InfoData = $InfoRecepcionInfo->getRecepcionGeneralInfo($data);
 
-        $datos = [
-            "datos" => $InfoData
+        $dataDom = [
+            "id_domRecepcionista" => $InfoData['0']['id_domRecepcionista']
         ];
 
-        return view('/recepcion_view/editar_recepcion', $datos);
+        $InfoRecepcionDomInfo = new RecepcionCRUDModel();
+        $InfoDataDom = $InfoRecepcionDomInfo->getRecepcionDomInfo($dataDom);
+
+        $datosRecepcion = [
+            "datos" => $InfoData,
+            "datos_dom" => $InfoDataDom
+        ];
+
+        return view('/recepcion_view/editar_recepcion', $datosRecepcion);
         
 
     }
 
     public function updateRecepcionInfo() {
 
-        //$password_hash = password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
-        //
-        //$datos = [
-        //    "usuario"    => $_POST['usuario'],             
-        //    "rol"        => $_POST['rol'],      
-        //    "contrasena" => $password_hash,       
-        //    "estado"     => $_POST['estado']       
-        //];
-        //
-        //$idUsuario = $_POST['idUsuario'];
-        //$Crud = new UsuariosCRUDModel();
-        //
-        //$respuesta = $Crud->updateUsuario($datos, $idUsuario);
-        //
-        //if($respuesta) {
-        //    return redirect()->to(base_url().'/admin_view')->with('mensaje', '2');
-        //} else {
-        //    return redirect()->to(base_url().'/admin_view')->with('mensaje', '3');
-        //}
+        $datos_recepcion = [
+
+            "nombre"              => $_POST['nombre'],
+            "apellidos"           => $_POST['apellidos'],
+            "genero"              => $_POST['genero'],
+            "fecha_nacimiento"    => $_POST['fecha_nacimiento'],
+            "correo"              => $_POST['correo'],
+            "telefono"            => $_POST['telefono'],
+            "estado"              => $_POST['estado'],
+            "id_domRecepcionista" => $_POST['idRecepcionistaDom']
+
+        ];
+        
+        $id_Recepcionista    = $_POST['idRecepcionista'];
+        $id_domRecepcionista = $_POST['idRecepcionistaDom'];
+
+
+        $datos_recepcion_domicilio = [
+
+            "calle"   => $_POST['calle'],
+            "numExt"  => $_POST['numext'],
+            "numInt"  => $_POST['numint'],
+            "colonia" => $_POST['colonia'],
+            "cp"      => $_POST['cp'],
+            "cuidad"  => $_POST['cuidad'],
+            "estado"  => $_POST['estadoRepublica'],
+
+         ];
+
+         $updateDatosRecepcionDomicilio = new RecepcionCRUDModel();
+         $respuesta_recepcion_domicilio = $updateDatosRecepcionDomicilio->updateRecepcionDomInfo($datos_recepcion_domicilio, $id_domRecepcionista);
+
+         $updateDatosRecepcionGeneral = new RecepcionCRUDModel();
+         $respuesta_recepcion_general = $updateDatosRecepcionGeneral->updateRecepcionGeneralInfo($datos_recepcion, $id_Recepcionista);
+
+         
+        
+        if($respuesta_recepcion_general && $respuesta_recepcion_domicilio) {
+            return redirect()->to(base_url().'/recepcion_view')->with('mensaje', '2');
+        } else {
+            return redirect()->to(base_url().'/recepcion_view')->with('mensaje', '3');
+        }
 
     }
 
     
 
-    public function eliminarUsuario($idUsuario) {
+    public function eliminarRecepcionista($id_recepcionista) {
 
-        $Crud = new UsuariosCRUDModel();
-        $data = ["id_usuario" => $idUsuario];
+        $data = [
+            "id_recepcionista" => $id_recepcionista
+        ];
+        
+        $InfoRecepcionInfo = new RecepcionCRUDModel();
+        $InfoData = $InfoRecepcionInfo->getRecepcionGeneralInfo($data);
+        
+        $dataDom = [
+            "id_domRecepcionista" => $InfoData['0']['id_domRecepcionista']
+        ];
+        
+        $EliminarRecepcionistaGeneralInfo = new RecepcionCRUDModel();
+        $respuesta = $EliminarRecepcionistaGeneralInfo->eliminarRecepcionistaGeneralInfo($data);
 
-        $respuesta = $Crud->deleteUsuario($data);
+        $EliminarRecepcionistaDomInfo = new RecepcionCRUDModel();
+        $respuesta = $EliminarRecepcionistaDomInfo->eliminarRecepcionistaDomInfo($dataDom);
 
         if($respuesta) {
-            return redirect()->to(base_url().'/admin_view')->with('mensaje', '4');
+            return redirect()->to(base_url().'/recepcion_view')->with('mensaje', '4');
         } else {
-            return redirect()->to(base_url().'/admin_view')->with('mensaje', '5');
+            return redirect()->to(base_url().'/recepcion_view')->with('mensaje', '5');
         }
 
     }

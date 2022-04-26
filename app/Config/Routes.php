@@ -72,9 +72,11 @@ $routes->add('/citas_view', 'CitasController::index');
  */
 $routes->add('/recepcion_view', 'RecepcionController::index');
 $routes->add('/view_crear_recepcion', 'RecepcionController::view_crear_recepcion');
-$routes->add('/crearNuevoRegistroRecepcion', 'RecepcionController::crearNuevoRegistroRecepcion');
+$routes->get('/view_mas_informacion_recepcion/(:any)', 'RecepcionController::view_mas_informacion_recepcion/$1');
 $routes->get('/actualizar_recepcion/(:any)', 'RecepcionController::getRecepcionInfo/$1');
-$routes->get('/editar_recepcion', 'RecepcionController::updateRecepcionInfo');
+$routes->post('/crearNuevoRegistroRecepcion', 'RecepcionController::crearNuevoRegistroRecepcion');
+$routes->post('/updateRecepcionInfo', 'RecepcionController::updateRecepcionInfo');
+$routes->get('/eliminarRecepcionista/(:any)', 'RecepcionController::eliminarRecepcionista/$1');
 
 
 
