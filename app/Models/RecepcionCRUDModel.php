@@ -41,20 +41,44 @@
             return $RecepcionId->get()->getResultArray();
         }
 
-        public function updateUsuario($data, $idUsuario) {
-            $Nombres = $this->db->table('usuarios');
-            $Nombres->set($data);
-            $Nombres->where('id_usuario', $idUsuario);
+        public function getRecepcionDomInfo($recepcion_id_dom) {
+            $RecepcionId = $this->db->table('recepcionista_domicilio');
+            $RecepcionId->where($recepcion_id_dom);
 
-            return $Nombres->update();
+            return $RecepcionId->get()->getResultArray();
         }
 
-        public function deleteUsuario($idUsuario) {
+        public function updateRecepcionGeneralInfo($data, $id_recepcionista) {
+            $RecepcionistaUpdate = $this->db->table('recepcionista');
+            $RecepcionistaUpdate->set($data);
+            $RecepcionistaUpdate->where('id_recepcionista', $id_recepcionista);
 
-            $Nombres = $this->db->table('usuarios');
-            $Nombres->where($idUsuario);
+            return $RecepcionistaUpdate->update();
+        }
 
-            return $Nombres->delete();
+        public function updateRecepcionDomInfo($data, $id_recepcionista_dom) {
+            $RecepcionistaUpdateDom = $this->db->table('recepcionista_domicilio');
+            $RecepcionistaUpdateDom->set($data);
+            $RecepcionistaUpdateDom->where('id_domRecepcionista', $id_recepcionista_dom);
+
+            return $RecepcionistaUpdateDom->update();
+        }
+
+        public function eliminarRecepcionistaGeneralInfo($id_recepcionista) {
+
+            $eliminarGInfo = $this->db->table('recepcionista');
+            $eliminarGInfo->where($id_recepcionista);
+
+            return $eliminarGInfo->delete();
+
+        }
+
+        public function eliminarRecepcionistaDomInfo($id_recepcionista_dom) {
+
+            $eliminarDInfo = $this->db->table('recepcionista_domicilio');
+            $eliminarDInfo->where($id_recepcionista_dom);
+
+            return $eliminarDInfo->delete();
 
         }
 

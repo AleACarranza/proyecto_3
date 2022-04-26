@@ -60,7 +60,10 @@
 
     "><?php echo session('rol') ?></span> </h5>
     <ul class="nav-item h1 ml-3 mr-0 p-0">
-      <a class="btn btn-outline-danger" href="<?php echo base_url('/cerrar_sesion') ?>">Cerrar Sesión</a>
+      <a class="btn btn-outline-danger" href="<?php echo base_url('/cerrar_sesion') ?>">
+        Cerrar Sesión
+        <i class="fa-solid fa-arrow-right-from-bracket ml-2"></i>
+      </a>
     </ul>
   </div>
 

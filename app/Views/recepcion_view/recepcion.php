@@ -55,7 +55,7 @@ Recepción
                                 <td class="<?php $color = $key->estado == "Activo" ? "text-success" : "text-danger";
                                             echo $color; ?>"><?php echo $key->estado ?></td>
                                 <td>
-                                    <a href="" class="btn btn-info btn-sm text-white">Más Información
+                                    <a href="<?php echo base_url().'/view_mas_informacion_recepcion/'. $key->id_recepcionista ?>" class="btn btn-info btn-sm text-white">Más Información
                                     <i class="fa-solid fa-circle-info fa-lg"></i>
                                     </a>
                                 </td>
@@ -65,7 +65,7 @@ Recepción
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="" class="btn btn-danger btn-sm">Eliminar
+                                    <a href="<?php echo base_url().'/eliminarRecepcionista/'. $key->id_recepcionista ?>" class="btn btn-danger btn-sm">Eliminar
                                         <i class="fa-solid fa-circle-minus fa-lg"></i>
                                     </a>
                                 </td>

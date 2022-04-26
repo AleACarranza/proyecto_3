@@ -59,7 +59,7 @@ $this->extend($base);
 ?>
 
 <?= $this->section('page_title'); ?>
-Recepción View - Actualizar Registro
+Recepción View - Más Información
 <?= $this->endSection(); ?>
 
 <?= $this->section('view_title'); ?>
@@ -72,10 +72,10 @@ Recepción
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h6>Actualizar Registro: Recepción</h6>
+            <h6>Más Información Registro: Recepción</h6>
             <hr class="hr_black_5">
             <h3 class="font-weight-bold text-center mb-4 mt-4">Información Primaria</h3>
-            <form class="d-flex flex-column" method="POST" action="<?php echo base_url(). '/updateRecepcionInfo' ?> ">
+            
                 
                 <div class="d-flex justify-content-between">
 
@@ -86,17 +86,17 @@ Recepción
 
                     <div class="d-flex flex-column w-100">
                         <label class="font-weight-bold" for="nombre">Nombre(s)</label>
-                        <input autocomplete="off" required type="text" name="nombre" id="nombre" class="form-control"
+                        <input autocomplete="off" disabled required type="text" name="nombre" id="nombre" class="form-control"
                         value="<?php echo $nombre ?>" >
                     </div>
                     <div class="d-flex flex-column w-100 ml-3">
                         <label class="font-weight-bold" for="apellidos">Apellido(s)</label>
-                        <input autocomplete="off" required type="text" name="apellidos" id="apellidos" class="form-control"
+                        <input autocomplete="off" disabled required type="text" name="apellidos" id="apellidos" class="form-control"
                         value="<?php echo $apellidos ?>">
                     </div>
                     <div class="d-flex flex-column ml-3">
                         <label class="font-weight-bold" for="genero">Género</label>
-                        <select name="genero" id="genero" class="fit-jala custom-select">
+                        <select disabled name="genero" id="genero" class="fit-jala custom-select">
                             <option selected disabled>Seleccionar</option>
                             <option value="M"    <?php echo $masculinoS ?>  >M</option>
                             <option value="F"    <?php echo $femeninoS  ?>  >F</option>
@@ -105,7 +105,7 @@ Recepción
                     </div>
                     <div class="d-flex flex-column ml-3">
                         <label class="font-weight-bold" for="fecha_nacimiento">Fecha de Nacimiento</label>
-                        <input required type="date" name="fecha_nacimiento" class="form-control"
+                        <input disabled required type="date" name="fecha_nacimiento" class="form-control"
                         value="<?php echo $fecha_nacimiento ?>">
                     </div>
                 </div>
@@ -113,17 +113,17 @@ Recepción
                 <div class="d-flex mt-3">
                     <div class="d-flex flex-column">
                         <label class="font-weight-bold" for="telefono">Teléfono</label>
-                        <input autocomplete="off" required type="tel" name="telefono" minlength="10" maxlength="10" id="telefono" class="form-control"
+                        <input autocomplete="off" disabled required type="tel" name="telefono" minlength="10" maxlength="10" id="telefono" class="form-control"
                         value="<?php echo $telefono ?>">
                     </div>
                     <div class="d-flex flex-column w-50 ml-3">
                         <label class="font-weight-bold" for="correo">Correo</label>
-                        <input autocomplete="off" required type="email" name="correo" id="correo" class="form-control"
+                        <input autocomplete="off" disabled required type="email" name="correo" id="correo" class="form-control"
                         value="<?php echo $correo ?>">
                     </div>
                     <div class="d-flex flex-column ml-3">
                         <label class="font-weight-bold" for="estado">Estado</label>
-                        <select required name="estado" id="estado" class="fit-jala custom-select">
+                        <select disabled required name="estado" id="estado" class="fit-jala custom-select">
                             <option value="Activo"   <?php echo $activoS;   ?> >Activo</option>
 					        <option value="Inactivo" <?php echo $inactivoS; ?> >Inactivo</option>
                         </select>
@@ -135,22 +135,22 @@ Recepción
                 <div class="d-flex justify-content-between">
                     <div class="d-flex flex-column w-75">
                         <label class="font-weight-bold" for="calle">Calle</label>
-                        <input autocomplete="off" required type="text" name="calle" id="calle" class="form-control"
+                        <input autocomplete="off" disabled required type="text" name="calle" id="calle" class="form-control"
                         value="<?php echo $calle ?>">
                     </div>
                     <div class="d-flex flex-column w-75 ml-3">
                         <label class="font-weight-bold" for="colonia">Colonia</label>
-                        <input autocomplete="off" required type="text" name="colonia" id="colonia" class="form-control"
+                        <input autocomplete="off" disabled required type="text" name="colonia" id="colonia" class="form-control"
                         value="<?php echo $colonia ?>">
                     </div>
                     <div class="d-flex flex-column ml-3">
                         <label class="font-weight-bold" for="numint">N° Interior</label>
-                        <input type="number" name="numint" id="numint" class="form-control"
+                        <input disabled type="number" name="numint" id="numint" class="form-control"
                         value="<?php echo $numExt ?>">
                     </div>
                     <div class="d-flex flex-column ml-3">
                         <label class="font-weight-bold" for="numext">N° Exterior</label>
-                        <input type="number" name="numext" id="numext" class="form-control"
+                        <input disabled type="number" name="numext" id="numext" class="form-control"
                         value="<?php echo $numInt ?>">
                     </div>
                     
@@ -160,29 +160,30 @@ Recepción
                     
                     <div class="d-flex flex-column w-25">
                         <label class="font-weight-bold" for="estadoRepublica">Estado</label>
-                        <input autocomplete="off" required type="text" name="estadoRepublica" id="estadoRepublica" class="form-control"
+                        <input autocomplete="off" disabled required type="text" name="estadoRepublica" id="estadoRepublica" class="form-control"
                         value="<?php echo $estadoRepublica ?>">
                     </div>
 
                     <div class="d-flex flex-column w-25 ml-3">
                         <label class="font-weight-bold" for="cuidad">Cuidad</label>
-                        <input autocomplete="off" required type="text" name="cuidad" id="cuidad" class="form-control"
+                        <input autocomplete="off" disabled required type="text" name="cuidad" id="cuidad" class="form-control"
                         value="<?php echo $cuidad ?>">
                     </div>
 
                     <div class="d-flex flex-column ml-3">
                         <label class="font-weight-bold" for="cp">Código Postal</label>
-                        <input required type="number" name="cp" id="cp" class="form-control"
+                        <input disabled required type="number" name="cp" id="cp" class="form-control"
                         value="<?php echo $cp ?>">
                     </div>
 
                 </div>
 
                 <br>
-                <button class="btn btn-warning fit-jala">Actualizar
-                <i class="fa-solid fa-floppy-disk ml-2"></i>
-                </button>
-            </form>
+                <a href="<?php echo base_url().'/recepcion_view' ?>" class="btn btn-info fit-jala">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                Atras
+                </a>
+            
         </div>
     </div>
     <hr class="hr_black">
