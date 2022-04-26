@@ -81,6 +81,7 @@ Pacientes
 <?= $this->section('contenido'); ?>
 
     <h3>Estamos en pacientes, ponte buso</h3>
+    <p>porfi chequen lo que hacen:c</p>
 
 <?= $this->endSection(); ?>
 </html>
