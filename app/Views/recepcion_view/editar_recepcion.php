@@ -179,7 +179,7 @@ Recepción
                 </div>
 
                 <br>
-                <button class="btn btn-warning fit-jala">Actualizar
+                <button class="btn btn-warning fit-jala" style="color: white;">Actualizar
                 <i class="fa-solid fa-floppy-disk ml-2"></i>
                 </button>
             </form>

@@ -14,14 +14,11 @@ $url_radiografia  = $datosR[0]['url_radiografia'];
 
 /* Colocar el "selected" en donde corresponda, ya sea si su estado es activo o inactivo*/
 $activoS = "";
-$inactivoS = "";
 $canceladoS = "";
 $completadoS = "";
 
 if ($estado == "Activo") {
     $activoS = 'selected';
-} elseif ($estado == "Inactivo") {
-    $inactivoS = 'selected';
 } elseif ($estado == "Cancelado") {
     $canceladoS = 'selected';
 } elseif ($estado == "Completado") {
@@ -119,8 +116,8 @@ Tratamiento
                 </div>
 
                 <br>
-                <button class="btn btn-primary fit-jala">Guardar
-                <i class="fa-solid fa-floppy-disk ml-2"></i>
+                <button class="btn btn-warning fit-jala" style="color: white;">Actualizar
+                    <i class="fa-solid fa-floppy-disk ml-2"></i>
                 </button>
             </form>
         </div>

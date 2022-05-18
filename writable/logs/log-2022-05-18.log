@@ -73,3 +73,50 @@ CRITICAL - 2022-05-18 02:55:27 --> Undefined array key "paciente"
 #3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-05-18 15:28:06 --> Undefined variable $id_tratamiento
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\citas_view\editar_cita.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 60)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('citas_view/edit...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(146): view('citas_view/edit...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->view_editarCita('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 15:28:58 --> Undefined variable $id_tratamiento2
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\citas_view\editar_cita.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 61)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('citas_view/edit...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(146): view('citas_view/edit...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->view_editarCita('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 15:29:07 --> Undefined variable $nombre
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\citas_view\editar_cita.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 62)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('citas_view/edit...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(146): view('citas_view/edit...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->view_editarCita('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 15:30:35 --> Undefined array key "paciente_nombre"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 174)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->update_citaInfo()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 15:31:12 --> Undefined array key "paciente_nombre"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 174)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->update_citaInfo()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

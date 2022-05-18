@@ -57,7 +57,7 @@ $routes->get('/eliminarUsuario/(:any)',         'AdminController::eliminarUsuari
 $routes->add('/pacientes_view',                         'PacientesController::index');
 $routes->add('/view_crear_paciente',                    'PacientesController::view_crearPaciente');
 $routes->get('/view_crear_cita/(:any)',                 'CitasController::view_crearCita/$1');
-$routes->post('/crear_registro_cita',                    'CitasController::crearCita');
+$routes->post('/crear_registro_cita',                   'CitasController::crearCita');
 $routes->get('/view_actualizar_paciente/(:any)',        'PacientesController::view_actualizarPaciente/$1');
 $routes->get('/view_mas_informacion_paciente/(:any)',   'PacientesController::view_mas_informacionPaciente/$1');
 $routes->get('/eliminar_paciente/(:any)',               'PacientesController::eliminarPaciente/$1');
@@ -78,7 +78,12 @@ $routes->post('/update_doctor_info',                'DoctoresController::update_
 /**
  * Rutas Citas
  */
-$routes->add('/citas_view', 'CitasController::index');
+$routes->add('/citas_view',                       'CitasController::index');
+$routes->get('/view_mas_informacion_cita/(:any)', 'CitasController::view_mas_informacionCita/$1');
+$routes->get('/view_editar_cita/(:any)',          'CitasController::view_editarCita/$1');
+$routes->post('/update_cita_info',                'CitasController::update_citaInfo');
+$routes->get('/eliminar_cita/(:any)',             'CitasController::eliminarCita/$1');
+
 
 /**
  * Rutas Recepción
