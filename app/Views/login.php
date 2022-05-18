@@ -8,14 +8,12 @@ Log In
 
 <?= $this->section('contenido'); ?>
 
-  
-
-    <div class="login-box">
+    <div class="login_input">
       <img src="<?php echo base_url(); ?>/public/img/icono_salud_bajio_dental.jpg" class="avatar" alt="Avatar Image">
       <h1>Login Salud Bajío Dental</h1>
       <form action="<?php echo base_url('/login') ?>" method="POST">
         <!-- USERNAME INPUT -->
-        <label for="usuario">Usuario</label>
+        <label class="mt-3" for="usuario">Usuario</label>
         <input autocomplete="off" type="text" name="usuario" placeholder="Ingresar Usuario" class="form-control" required="">
         <!-- PASSWORD INPUT -->
         <label for="password">Contraseña</label>

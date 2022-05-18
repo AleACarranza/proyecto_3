@@ -1,0 +1,341 @@
+CRITICAL - 2022-05-16 14:54:39 --> Undefined variable $mensaje
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\tratamientos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 82)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(17): view('tratamientos_vi...')
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 14:55:42 --> Undefined variable $mensaje
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\tratamientos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 82)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(20): view('tratamientos_vi...')
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 14:55:43 --> Undefined variable $mensaje
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\tratamientos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 82)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(20): view('tratamientos_vi...')
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 14:57:15 --> Undefined array key "calle"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 44)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 14:57:33 --> Undefined array key "id_paciente"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 50)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 15:44:58 --> Undefined variable $key
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\tratamientos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 49)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(28): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->index()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 15:53:56 --> Undefined variable $key
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\crear_tratamiento.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\desarrollo\\h...', 36)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(41): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_crearTratamiento()
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:03:59 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 49)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 16:04:41 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 49)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 16:05:05 --> Undefined array key "nombre"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 49)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 16:05:54 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 50)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 16:07:39 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 51)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 16:09:12 --> Unsupported operand types: string + string
+#0 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->crearTratamiento()
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 16:28:52 --> Undefined array key "id_recepcionista"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 4)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:31:12 --> Attempt to read property "nombre" on array
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\desarrollo\\h...', 59)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:31:16 --> Attempt to read property "nombre" on array
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\desarrollo\\h...', 59)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:32:22 --> Attempt to read property "id_paciente" on array
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\desarrollo\\h...', 64)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:43:12 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 4)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('writable', 'uploads', '1652731076_ff63...')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:48:23 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 4)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('writable', 'uploads', '1652731076_ff63...')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 16:48:25 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 4)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(57): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('writable', 'uploads', '1652731076_ff63...')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 17:11:23 --> Undefined array key "url_radiografia"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\mas_informacion_tratamiento.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 13)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(61): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_mas_informacionTratamiento('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 21:57:33 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\editar_tratamiento.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 4)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(63): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_editarTratamiento('path', 'to', 'font-awesome', 'css', 'font-awesome.mi...')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 21:59:38 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\tratamientos_view\editar_tratamiento.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 4)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('tratamientos_vi...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(63): view('tratamientos_vi...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->view_editarTratamiento('path', 'to', 'font-awesome', 'css', 'font-awesome.mi...')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-16 22:18:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_recepcionista` = :id_recepcionista:' at line 1
+CRITICAL - 2022-05-16 22:18:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_recepcionista` = :id_recepcionista:' at line 1
+#0 C:\desarrollo\htdocs\proyecto_3\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tratami...', 0)
+#1 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tratami...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tratami...')
+#3 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `tratami...', Array, false)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Models\TratamientosCRUDModel.php(81): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(94): App\Models\TratamientosCRUDModel->updateTratamientosInfo('1', Array)
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->actualizarTratamiento()
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#8 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-05-16 22:19:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_tratamiento` = :id_tratamiento:' at line 1
+CRITICAL - 2022-05-16 22:19:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_tratamiento` = :id_tratamiento:' at line 1
+#0 C:\desarrollo\htdocs\proyecto_3\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tratami...', 0)
+#1 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tratami...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tratami...')
+#3 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `tratami...', Array, false)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Models\TratamientosCRUDModel.php(81): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(94): App\Models\TratamientosCRUDModel->updateTratamientosInfo('1', Array)
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->actualizarTratamiento()
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#8 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-05-16 22:19:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_tratamiento` = :id_tratamiento:' at line 1
+CRITICAL - 2022-05-16 22:19:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_tratamiento` = :id_tratamiento:' at line 1
+#0 C:\desarrollo\htdocs\proyecto_3\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tratami...', 0)
+#1 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tratami...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tratami...')
+#3 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `tratami...', Array, false)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Models\TratamientosCRUDModel.php(81): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(94): App\Models\TratamientosCRUDModel->updateTratamientosInfo('1', Array)
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->actualizarTratamiento()
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#8 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-05-16 22:21:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_tratamiento` = :id_tratamiento:' at line 1
+CRITICAL - 2022-05-16 22:21:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id_tratamiento` = :id_tratamiento:' at line 1
+#0 C:\desarrollo\htdocs\proyecto_3\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tratami...', 0)
+#1 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tratami...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tratami...')
+#3 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `tratami...', Array, false)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Models\TratamientosCRUDModel.php(81): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(94): App\Models\TratamientosCRUDModel->updateTratamientosInfo('1', Array)
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->actualizarTratamiento()
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#8 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-05-16 22:51:36 --> Cannot delete or update a parent row: a foreign key constraint fails (`proyectoclinicadental`.`radiografia`, CONSTRAINT `fk_id_tratamiento` FOREIGN KEY (`id_tratamiento`) REFERENCES `tratamiento` (`id_tratamiento`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+CRITICAL - 2022-05-16 22:51:36 --> Cannot delete or update a parent row: a foreign key constraint fails (`proyectoclinicadental`.`radiografia`, CONSTRAINT `fk_id_tratamiento` FOREIGN KEY (`id_tratamiento`) REFERENCES `tratamiento` (`id_tratamiento`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 C:\desarrollo\htdocs\proyecto_3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tr...', 0)
+#1 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tr...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tr...')
+#3 C:\desarrollo\htdocs\proyecto_3\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tr...', Array, false)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Models\TratamientosCRUDModel.php(73): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\desarrollo\htdocs\proyecto_3\app\Controllers\TratamientosController.php(187): App\Models\TratamientosCRUDModel->eliminarTratamientoInfo(Array)
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\TratamientosController->eliminarTratamiento('8')
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TratamientosController))
+#8 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 23:12:24 --> Invalid file: recepcion_view/crear_doctor.php
+#0 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('recepcion_view/...')
+#1 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('recepcion_view/...', Array, true)
+#2 C:\desarrollo\htdocs\proyecto_3\app\Controllers\DoctoresController.php(17): view('recepcion_view/...')
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->view_crearDoctor()
+#4 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 23:30:32 --> You must set the database table to be used with your query.
+#0 C:\desarrollo\htdocs\proyecto_3\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\desarrollo\htdocs\proyecto_3\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\desarrollo\htdocs\proyecto_3\app\Controllers\DoctoresController.php(54): CodeIgniter\Model->__call('insertRecepcion...', Array)
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->crear_registroDoctor()
+#4 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 23:47:48 --> Cannot use object of type stdClass as array
+#0 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->view_mas_informacionDoctor('1')
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 23:54:53 --> Cannot use object of type stdClass as array
+#0 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->view_mas_informacionDoctor('1')
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 23:54:56 --> Cannot use object of type stdClass as array
+#0 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->view_mas_informacionDoctor('1')
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 23:55:02 --> Cannot use object of type stdClass as array
+#0 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->view_mas_informacionDoctor('2')
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 23:55:06 --> Cannot use object of type stdClass as array
+#0 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\DoctoresController->view_mas_informacionDoctor('1')
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DoctoresController))
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

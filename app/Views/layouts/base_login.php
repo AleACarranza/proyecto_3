@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/public/css/bootstrap/bootstrap.css">
 
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/login/login_css.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/login/login.css">
 
     <title><?= $this->renderSection('titulo') ?></title>
   </head>
