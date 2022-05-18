@@ -11,6 +11,20 @@
             return $CitasInfo->getResult();
         }
 
+        public function getCitasInfoById($cita_id) {
+            $CitaInfoById = $this->db->table('cita');
+            $CitaInfoById->where($cita_id);
+
+            return $CitaInfoById->get()->getResultArray();
+        }
+
+        public function getTratamientoById($tratamiento_id) {
+            $TratamientoInfoById = $this->db->table('tratamiento');
+            $TratamientoInfoById->where($tratamiento_id);
+
+            return $TratamientoInfoById->get()->getResultArray();
+        }
+
         public function getPacientePrimariaInfo($paciente_id) {
             $PacienteId = $this->db->table('paciente');
             $PacienteId->where($paciente_id);
@@ -43,6 +57,24 @@
             
             return $this->db->insertID();
     
+        }
+
+        public function updateCitaInfoById($datos_cita, $id_cita) {
+            $CitaUpdateInfo = $this->db->table('cita');
+            $CitaUpdateInfo->set($datos_cita);
+            $CitaUpdateInfo->where('id_cita', $id_cita);
+
+            return $CitaUpdateInfo->update();
+    
+        }
+
+        public function eliminarCita($id_cita) {
+
+            $eliminarCita = $this->db->table('cita');
+            $eliminarCita->where($id_cita);
+
+            return $eliminarCita->delete();
+
         }
 
     }

@@ -70,7 +70,11 @@ Citas
                                 <select required name="doctor_id" id="doctor_id" class="fit-jala custom-select">
                                     <option disabled value="" selected>Seleccionar</option>
                                     <?php foreach ($datosDoctor as $key) : ?>
-                                        <option value="<?php echo $key->id_doctor ?>"><?php echo $key->nombre; echo " "; echo $key->apellidos; ?></option>
+
+                                        <?php if ($key->estado == "Activo") { ?>
+                                            <option value="<?php echo $key->id_doctor ?>"><?php echo $key->nombre; echo " "; echo $key->apellidos; ?></option>
+                                        <?php } ?>
+                                        
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -128,7 +132,7 @@ Citas
 
                         <br>
                         <button class="btn btn-primary fit-jala">Guardar
-                        <i class="fa-solid fa-floppy-disk ml-2"></i>
+                            <i class="fa-solid fa-floppy-disk ml-2"></i>
                         </button>
                     </form>
                 </div>
@@ -138,9 +142,24 @@ Citas
         </div>
     <?php break; } else { ?>
 
-        <div class="tratamiento_error_green_soft d-flex align-content-center flex-column">
-            <h3 class="text-center mt-3 mb-3">Este Paciente cuenta con Tratamientos, pero ninguno <span class="text-success">Activo</span> </h3>
-            <h3 class="text-center mt-3 mb-3">Crea un nuevo Tratamiento y vuelve a intentar!</h3>
+        <div class="d-flex flex-column align-items-center">
+            <div class="tratamiento_error_green_soft d-flex align-content-center flex-column">
+                <h3 class="text-center mt-3 mb-3">Este Paciente cuenta con Tratamientos, pero ninguno <span class="text-success">Activo</span> </h3>
+                <h3 class="text-center mt-3 mb-3">Crea un nuevo Tratamiento y vuelve a intentar!</h3>
+            </div>
+
+            <div class="d-flex">
+                <a href="<?php echo base_url().'/pacientes_view' ?>" class="btn btn-info fit-jala mt-3 mr-3">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                    Regresar a Pacientes
+                </a>
+
+                <a href="<?php echo base_url().'/tratamientos_view' ?>"  style="background-color: rgb(85,137,196); color: white;" class="btn fit-jala mt-3">
+                    Ir a Tratamientos
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            
         </div>
 
     <?php break; } ?>

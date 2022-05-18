@@ -61,17 +61,17 @@ Citas
                                             echo $color; ?>"><?php echo $key->estado ?>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url().'/view_mas_informacion_tratamiento/' ?>" class="btn btn-info btn-sm text-white">Más Información
+                                    <a href="<?php echo base_url().'/view_mas_informacion_cita/' . $key->id_cita ?>" class="btn btn-info btn-sm text-white">Más Información
                                     <i class="fa-solid fa-circle-info fa-lg"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url().'/view_editar_tratamiento/' ?>" class="btn btn-warning btn-sm text-white">Editar
+                                    <a href="<?php echo base_url().'/view_editar_cita/' . $key->id_cita ?>" class="btn btn-warning btn-sm text-white">Editar
                                         <i class="fa-solid fa-pen-to-square fa-lg"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url().'/eliminar_tratamiento/' ?>" class="btn btn-danger btn-sm">Eliminar
+                                    <a href="<?php echo base_url().'/eliminar_cita/' . $key->id_cita ?>" class="btn btn-danger btn-sm">Eliminar
                                         <i class="fa-solid fa-circle-minus fa-lg"></i>
                                     </a>
                                 </td>
@@ -86,24 +86,24 @@ Citas
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
-      //let mensaje = '<?php // echo $mensaje ?>'
-      //if (mensaje == '1') {
-      //  swal('Completado', 'Agregado exitosamente!', 'success')
-      //} else if(mensaje == '0'){
-      //  swal('Hay un error', 'No se pudo agregar', 'error')
-      //}
-//
-      //if (mensaje == '2') {
-      //  swal('Completado', 'Registro actualizado exitosamente!', 'success')
-      //} else if(mensaje == '3'){
-      //  swal('Hay un error', 'El registro no se pudo actualizar', 'error')
-      //}
-//
-      //if (mensaje == '4') {
-      //  swal('Completado', 'Eliminado exitosamente!', 'success')
-      //} else if(mensaje == '5'){
-      //  swal('Hay un error', 'No se pudo eliminar', 'error')
-      //}
+      let mensaje = '<?php echo $mensaje ?>'
+      if (mensaje == '1') {
+        swal('Completado', 'Agregado exitosamente!', 'success')
+      } else if(mensaje == '0'){
+        swal('Hay un error', 'No se pudo agregar', 'error')
+      }
+
+      if (mensaje == '2') {
+        swal('Completado', 'Registro actualizado exitosamente!', 'success')
+      } else if(mensaje == '3'){
+        swal('Hay un error', 'El registro no se pudo actualizar', 'error')
+      }
+
+      if (mensaje == '4') {
+        swal('Completado', 'Eliminado exitosamente!', 'success')
+      } else if(mensaje == '5'){
+        swal('Hay un error', 'No se pudo eliminar', 'error')
+      }
 
 </script>
 
