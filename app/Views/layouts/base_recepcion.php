@@ -32,6 +32,9 @@
       <li class="nav-item h1 ml-3">
         <a class="btn btn-outline-dark" href="<?php echo base_url() . '/citas_view'; ?>">Citas</a>
       </li>
+      <li class="nav-item h1 ml-3">
+        <a class="btn btn-outline-dark" href="<?php echo base_url() . '/pacientes_view'; ?>">Pacientes</a>
+      </li>
     </ul>
   </div>
 

@@ -1,0 +1,75 @@
+CRITICAL - 2022-05-18 00:00:39 --> Attempt to read property "id_tratamiento" on array
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\citas_view\crear_cita.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\desarrollo\\h...', 77)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('citas_view/crea...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(36): view('citas_view/crea...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->view_crearCita('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 00:01:32 --> Undefined array key 0
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\citas_view\crear_cita.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 77)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('citas_view/crea...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(36): view('citas_view/crea...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->view_crearCita('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 00:06:55 --> Undefined array key "i"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Views\citas_view\crear_cita.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 77)
+#1 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(210): include('C:\\desarrollo\\h...')
+#2 C:\desarrollo\htdocs\proyecto_3\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\desarrollo\htdocs\proyecto_3\system\Common.php(1089): CodeIgniter\View\View->render('citas_view/crea...', Array, true)
+#4 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(36): view('citas_view/crea...', Array)
+#5 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->view_crearCita('1')
+#6 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#7 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 02:41:26 --> Undefined array key "calle"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\PacientesController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 36)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\PacientesController->crear_registroPaciente()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 02:42:42 --> Undefined array key "calle"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\PacientesController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 36)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\PacientesController->crear_registroPaciente()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 02:43:00 --> Undefined array key "calle"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\PacientesController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 36)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\PacientesController->crear_registroPaciente()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PacientesController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 02:53:58 --> Undefined array key "doctor_id"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 46)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->crearCita()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 02:54:32 --> Undefined array key "doctor_id"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 46)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->crearCita()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 02:55:27 --> Undefined array key "paciente"
+#0 C:\desarrollo\htdocs\proyecto_3\app\Controllers\CitasController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\desarrollo\\h...', 65)
+#1 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(832): App\Controllers\CitasController->crearCita()
+#2 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CitasController))
+#3 C:\desarrollo\htdocs\proyecto_3\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\desarrollo\htdocs\proyecto_3\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,25 @@
+
+/******************  CSS  ********************/
+
+
+
+/******************  CSS ERRORES ********************/
+.tratamiento_error {
+    margin: auto;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    background-color: rgb(143,98,119);
+    color: white;
+}
+
+.tratamiento_error_green_soft {
+    margin: auto;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    background-color: rgb(208,255,233);
+    color: black;
+}

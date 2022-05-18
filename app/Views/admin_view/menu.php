@@ -22,7 +22,7 @@
       <a class="btn btn-outline-dark" href="<?php echo base_url().'/citas_view'; ?>">Citas</a>
     </li>
     <li class="nav-item h1 ml-3">
-      <a class="btn btn-outline-dark" href="#">Tratamientos</a>
+      <a class="btn btn-outline-dark" href="<?php echo base_url(). '/tratamientos_view' ?>">Tratamientos</a>
     </li>
     <li class="nav-item h1 ml-3">
       <a class="btn btn-outline-dark" href="<?php echo base_url(). '/doctores_view' ?> ">Doctores</a>

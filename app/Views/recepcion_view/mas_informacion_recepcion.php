@@ -180,8 +180,8 @@ Recepción
 
                 <br>
                 <a href="<?php echo base_url().'/recepcion_view' ?>" class="btn btn-info fit-jala">
-                <i class="fa-solid fa-arrow-left-long"></i>
-                Atras
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                    Atras
                 </a>
             
         </div>

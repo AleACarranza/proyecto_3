@@ -21,20 +21,20 @@ class RecepcionController extends BaseController
             'mensaje' => $mensaje
         ];
         
-        if (session('rol') != 'Admin') {
+        if (session('rol') != 'Admin' ) {
             return redirect()->to(base_url('/citas_view'));
         }
 
         return view('recepcion_view/recepcion', $data);
     }
 
+
+
     public function view_mas_informacion_recepcion($id_recepcionista) {
 
         $data = [
             "id_recepcionista" => $id_recepcionista
         ];
-
-        
 
         $InfoRecepcionInfo = new RecepcionCRUDModel();
         $InfoData = $InfoRecepcionInfo->getRecepcionGeneralInfo($data);
