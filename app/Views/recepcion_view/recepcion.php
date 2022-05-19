@@ -19,6 +19,7 @@ Recepción View
 
 <?= $this->section('view_title'); ?>
 Recepción
+<i class="fa-solid fa-bell-concierge"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -46,30 +47,58 @@ Recepción
                             <th></th>
                         </tr>
                     </thead>
-                        <?php foreach ($datos as $key) : ?>
-                            <tr>
-                                <td><?php echo $key->nombre ?> </td>
-                                <td><?php echo $key->apellidos     ?> </td>
-                                <td><?php echo $key->genero     ?></td>
-                                <td><?php echo $key->telefono     ?></td>
-                                <td class="<?php $color = $key->estado == "Activo" ? "text-success" : "text-danger";
-                                            echo $color; ?>"><?php echo $key->estado ?></td>
-                                <td>
-                                    <a href="<?php echo base_url().'/view_mas_informacion_recepcion/'. $key->id_recepcionista ?>" class="btn btn-info btn-sm text-white">Más Información
-                                    <i class="fa-solid fa-circle-info fa-lg"></i>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="<?php echo base_url().'/actualizar_recepcion/'. $key->id_recepcionista ?>" class="btn btn-warning btn-sm text-white">Editar
-                                        <i class="fa-solid fa-pen-to-square fa-lg"></i>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="<?php echo base_url().'/eliminarRecepcionista/'. $key->id_recepcionista ?>" class="btn btn-danger btn-sm">Eliminar
-                                        <i class="fa-solid fa-circle-minus fa-lg"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                        <?php 
+                        
+                        $arrayDecode = json_decode(json_encode($datos), true);
+
+                        $nuevoArreglo = [
+
+                        ];
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Activo") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Inactivo") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+                        
+                        ?>
+                        <?php // foreach ($nuevoArreglo as $key) : ?>
+                                <?php // foreach($key as $key2) : ?>
+                                    <h2><?php // print_r($key); echo $key['nombre']; ?> </h2>
+                                <?php // endforeach; ?>
+                                <h3><?php // print_r($nuevoArreglo) ?></h3>
+                        <?php // endforeach; ?>
+
+                        <?php foreach ($nuevoArreglo as $key) : ?>
+                                    <tr>
+                                        <td><?php echo $key['nombre']; ?> </td>
+                                        <td><?php echo $key['apellidos']; ?> </td>
+                                        <td><?php echo $key['genero']; ?></td>
+                                        <td><?php echo $key['telefono']; ?></td>
+                                        <td class="<?php $color = $key['estado'] == "Activo" ? "text-success" : "text-danger";
+                                                    echo $color; ?>"><?php echo $key['estado'] ?></td>
+                                        <td>
+                                            <a href="<?php echo base_url().'/view_mas_informacion_recepcion/'. $key['id_recepcionista'] ?>" class="btn btn-info btn-sm text-white">Más Información
+                                            <i class="fa-solid fa-circle-info fa-lg"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="<?php echo base_url().'/actualizar_recepcion/'. $key['id_recepcionista'] ?>" class="btn btn-warning btn-sm text-white">Editar
+                                                <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="<?php echo base_url().'/eliminarRecepcionista/'. $key['id_recepcionista'] ?>" class="btn btn-danger btn-sm">Eliminar
+                                                <i class="fa-solid fa-circle-minus fa-lg"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
                         <?php endforeach; ?>
                 </table>
             </div>

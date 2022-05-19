@@ -41,6 +41,7 @@ Tratamiento View - Más Información
 
 <?= $this->section('view_title'); ?>
 Tratamiento
+<i class="fa-solid fa-tooth"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -49,7 +50,7 @@ Tratamiento
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h6>Más Información: Tratamientos</h6>
+            <h4>Más Información: Tratamientos</h4>
             <hr class="hr_black_5">
             <form class="d-flex flex-column" enctype ="multipart/form-data" method="POST" action="<?php echo base_url(). '/crearTratamiento' ?> ">
                 <div class="d-flex justify-content-between">

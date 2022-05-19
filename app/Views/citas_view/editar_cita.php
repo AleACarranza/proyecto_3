@@ -45,6 +45,7 @@ Citas View - Editar
 
 <?= $this->section('view_title'); ?>
 Citas
+<i class="fa-solid fa-calendar-check"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>

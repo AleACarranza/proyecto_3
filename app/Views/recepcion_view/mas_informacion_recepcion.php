@@ -64,15 +64,15 @@ Recepción View - Más Información
 
 <?= $this->section('view_title'); ?>
 Recepción
+<i class="fa-solid fa-bell-concierge"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
 
-
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h6>Más Información Registro: Recepción</h6>
+            <h4>Más Información Registro: Recepción</h4>
             <hr class="hr_black_5">
             <h3 class="font-weight-bold text-center mb-4 mt-4">Información Primaria</h3>
             

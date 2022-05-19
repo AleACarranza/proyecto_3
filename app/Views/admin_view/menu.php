@@ -6,7 +6,11 @@
     <h2 class="font-coolvetica ml-2 font-weight-bold">Salud Bajio Dental</h2>
   </div>
 
-  <h2>Usuarios y Roles</h2>
+  <div class="d-flex flex-row align-items-center">
+    <h2>Usuarios y Roles</h2>
+    <i class="fa-solid fa-user-group fa-xl ml-1"></i>
+  </div>
+  
 
   <ul class="nav justify-content-end">
     <li class="nav-item h1">

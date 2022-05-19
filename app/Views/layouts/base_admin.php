@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/public/css/bootstrap/bootstrap.css">
 
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/menu_nav.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/menu.css">
 
   <title><?= $this->renderSection('page_title') ?></title>
 </head>
