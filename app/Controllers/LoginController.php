@@ -31,7 +31,11 @@ class LoginController extends BaseController
         $datosUsuario = $Usuario->obtenerUsuario($data);
 
         if(count($datosUsuario) > 0 &&
-            password_verify($password, $datosUsuario[0]['contrasena']) && $datosUsuario[0]['estado'] == "Activo") {
+            password_verify($password, $datosUsuario[0]['contrasena'])) {
+
+            if ($datosUsuario[0]['estado'] == "Inactivo") {
+                return redirect()->to(base_url().'/')->with('mensaje', '2');
+            }
 
             $datos = [
                 "usuario" => $datosUsuario[0]['usuario'],
@@ -47,10 +51,6 @@ class LoginController extends BaseController
             } 
 
             return redirect()->to(base_url($base))->with('mensaje', 'success');
-
-        } elseif ($datosUsuario[0]['estado'] == "Inactivo") {
-            
-            return redirect()->to(base_url().'/')->with('mensaje', '2');
 
         } else {
             return redirect()->to(base_url().'/')->with('mensaje', '0');

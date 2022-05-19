@@ -92,7 +92,7 @@ Tratamientos
                         <h4>Radiografias</h4>
                         <div class="form-group">
                             <label for="radiografia"></label>
-                            <input type="file" class="form-control" name="radiografia" id="radiografia">
+                            <input required type="file" class="form-control" name="radiografia" id="radiografia">
                         </div>
                     </div>
                 </div>

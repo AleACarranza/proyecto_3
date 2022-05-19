@@ -5,7 +5,7 @@
             <form class="d-flex flex-column" method="POST" action="<?php echo base_url(). '/crearNuevoUsuario' ?> ">
                 <label class="font-weight-bold" for="usuario">Usuario</label>
                 <div class="d-flex justify-content-between align-items-center">
-                    <input type="text" name="usuario" id="usuario" class="form-control">
+                    <input autocomplete="off" type="text" name="usuario" id="usuario" class="form-control">
                     <i class="fa-solid fa-user-astronaut fa-2xl ml-3 mr-3"></i>
                 </div>
                 <i class="fa-light fa-user-cowboy"></i>
@@ -98,22 +98,28 @@
     </div>
 </div>
 
-<div class="d-flex justify-content-end align-items-center mr-3">
-    <h5 class="mb-0">Bienvenido <?php echo session('usuario') ?>, Su rol es: <span class="
-    <?php if (session('rol') == 'Admin') {
-        echo 'text-danger';
-    }?>
-    
-    <?php if (session('rol') == 'Recepción') {
-        echo 'text-success';
-    }?>
-
-    <?php if (session('rol') == 'Doctor') {
-        echo 'text-primary';
-    }?>
-
-    "><?php echo session('rol') ?></span> </h5>
-    <ul class="nav-item h1 ml-3 mr-0 p-0">
-        <a class="btn btn-outline-danger" href="<?php echo base_url('/cerrar_sesion') ?>">Cerrar Sesión</a>
-    </ul>
-</div>
+<div class="d-flex justify-content-around align-items-center mb-3">
+    <div class="d-flex justify-content-around align-items-center mr-3">
+      <span>&#128516;</span>
+      <h5 class="mb-0">Bienvenido <?php echo session('usuario') ?>, Su rol es: <span class="
+      <?php if (session('rol') == 'Admin') {
+          echo 'text-danger';
+      }?>
+      
+      <?php if (session('rol') == 'Recepción') {
+          echo 'text-success';
+      }?>
+  
+      <?php if (session('rol') == 'Doctor') {
+          echo 'text-primary';
+      }?>
+  
+      "><?php echo session('rol') ?></span> </h5>
+      <ul class="nav-item h1 ml-3 mr-0 p-0">
+          <a class="btn btn-outline-danger" href="<?php echo base_url('/cerrar_sesion') ?>">
+            Cerrar Sesión
+            <i class="fa-solid fa-arrow-right-from-bracket ml-2"></i>
+          </a>
+      </ul>
+    </div>
+  </div>
