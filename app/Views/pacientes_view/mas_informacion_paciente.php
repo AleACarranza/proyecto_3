@@ -77,8 +77,27 @@ Pacientes
         <div class="col-sm-12">
             <h4>Más Información Registro: Pacientes</h4>
             <hr class="hr_black_5">
-            <h3 class="font-weight-bold text-center mb-4 mt-4">Información Primaria</h3>
             <form class="d-flex flex-column" method="POST" action="<?php echo base_url(). '/pacientes_view' ?> ">
+
+                <h3 class="font-weight-bold text-center mb-4">Historial Clinico</h3>
+                <div class="d-flex flex-row justify-content-between">
+                    <?php if (count($datos_tratamientos) > 0) { ?>
+                        <?php foreach($datos_tratamientos as $key) : ?>
+                            <a href="<?php echo base_url().'/view_mas_informacion_tratamiento/'. $key['id_tratamiento'] ?>" class="btn btn-info fit-jala mb-3">
+                                Tratamiento: <?php echo $key['tratamiento'] ?> 
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        <?php endforeach; ?>
+                    <?php } else { ?>
+                        <h3 class="text-center m-auto">Este paciente no tiene Tratamientos</h3>
+                    <?php } ?>
+                    
+                </div>
+                <h5><?php // print_r($datos_tratamientos) ?></h5>
+
+
+                <h3 class="font-weight-bold text-center mb-4 mt-4">Información Primaria</h3>
+
                 <div class="d-flex justify-content-between">
                     <div class="d-flex flex-column w-100">
                         <label class="font-weight-bold" for="nombre">Nombre(s)</label>
