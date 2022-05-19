@@ -31,11 +31,11 @@ class LoginController extends BaseController
         $datosUsuario = $Usuario->obtenerUsuario($data);
 
         if(count($datosUsuario) > 0 &&
-            password_verify($password, $datosUsuario[0]['contrasena'])) {
+            password_verify($password, $datosUsuario[0]['contrasena']) && $datosUsuario[0]['estado'] == "Activo") {
 
             $datos = [
                 "usuario" => $datosUsuario[0]['usuario'],
-                "rol"     => $datosUsuario[0]['rol']
+                "rol"     => $datosUsuario[0]['rol'],
             ];
             $session = session();
             $session->set($datos);
@@ -48,8 +48,11 @@ class LoginController extends BaseController
 
             return redirect()->to(base_url($base))->with('mensaje', 'success');
 
-        } else {
+        } elseif ($datosUsuario[0]['estado'] == "Inactivo") {
             
+            return redirect()->to(base_url().'/')->with('mensaje', '2');
+
+        } else {
             return redirect()->to(base_url().'/')->with('mensaje', '0');
         }
 

@@ -37,6 +37,7 @@ Citas View - Crear Registro
 
 <?= $this->section('view_title'); ?>
 Citas
+<i class="fa-solid fa-calendar-check"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -49,7 +50,7 @@ Citas
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h6>Nuevo Registro: Citas</h6>
+                    <h4>Nuevo Registro: Citas</h4>
                     <hr class="hr_black_5">
                     <h3 class="font-weight-bold text-center mb-4 mt-4">Información Cita</h3>
                     <form class="d-flex flex-column" method="POST" action="<?php echo base_url(). '/crear_registro_cita' ?> ">

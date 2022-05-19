@@ -11,5 +11,6 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/menu_nav.css">
 
     <title><?php echo $titulo ?></title>
+    
   </head>
 <body>

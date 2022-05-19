@@ -50,19 +50,43 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <?php foreach($datos as $key): ?>
+                    <?php 
+                        
+                        $arrayDecode = json_decode(json_encode($datos), true);
+
+                        $nuevoArreglo = [
+
+                        ];
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Activo") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Inactivo") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+
+                        
+                        
+                        
+                        ?>
+                    <?php foreach($nuevoArreglo as $key): ?>
                             <tr>
-                                <td><?php echo $key->usuario ?> </td>
-                                <td><?php echo $key->rol     ?> </td>
+                                <td><?php echo $key['usuario'] ?> </td>
+                                <td><?php echo $key['rol']     ?> </td>
                                 <td>**********</td>
-                                <td class="<?php $color = $key->estado == "Activo" ? "text-success" : "text-danger"; echo $color; ?>"><?php echo $key->estado ?></td>
+                                <td class="<?php $color = $key['estado'] == "Activo" ? "text-success" : "text-danger"; echo $color; ?>"><?php echo $key['estado'] ?></td>
                                 <td>
-                                    <a href="<?php echo base_url(). '/obtenerIdUsuario/'.$key->id_usuario  ?>" class="btn btn-warning btn-sm text-white">Editar
+                                    <a href="<?php echo base_url(). '/obtenerIdUsuario/'. $key['id_usuario']  ?>" class="btn btn-warning btn-sm text-white">Editar
                                     <i class="fa-solid fa-pen-to-square fa-lg"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url(). '/eliminarUsuario/'.$key->id_usuario  ?>" class="btn btn-danger btn-sm">Eliminar
+                                    <a href="<?php echo base_url(). '/eliminarUsuario/'. $key['id_usuario']  ?>" class="btn btn-danger btn-sm">Eliminar
                                     <i class="fa-solid fa-circle-minus fa-lg"></i>
                                     </a>
                                 </td>

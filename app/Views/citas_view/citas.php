@@ -19,6 +19,7 @@ Citas View
 
 <?= $this->section('view_title'); ?>
 Citas
+<i class="fa-solid fa-calendar-check"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -31,8 +32,8 @@ Citas
                 <table class="table table-striped">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Doctor</th>
                             <th>Paciente</th>
+                            <th>Doctor</th>
                             <th>Fecha Cita</th>
                             <th>Hora</th>
                             <th>Estado</th>
@@ -41,37 +42,66 @@ Citas
                             <th></th>
                         </tr>
                     </thead>
-                        <?php foreach ($datos as $key) : ?>
+                        <?php 
+                        
+                        $arrayDecode = json_decode(json_encode($datos), true);
+
+                        $nuevoArreglo = [
+
+                        ];
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Activo") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Completado") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+
+                        for ($i = 0; $i < count($arrayDecode); $i++) {
+                            if ($arrayDecode[$i]['estado'] == "Cancelado") {
+                                $nuevoArreglo[] = $arrayDecode[$i];
+                            }
+                        }
+                        
+                        
+                        
+                        ?>
+                        <?php foreach ($nuevoArreglo as $key) : ?>
                             <tr>
-                                <td><?php echo $key->nombre_doctor ?></td>
-                                <td><?php echo $key->nombre_paciente ?></td>
-                                <td><?php echo $key->fecha_cita ?></td>
-                                <td><?php echo substr($key->hora, 0, 5);
+                                <td><?php echo $key['nombre_paciente'] ?></td>
+                                <td><?php echo $key['nombre_doctor'] ?></td>
+                                <td><?php echo $key['fecha_cita'] ?></td>
+                                <td><?php echo substr($key['hora'], 0, 5);
                                         
                                     ?>
                                 </td>
                                 <td class="<?php 
                                             $color = "text-success";
-                                            if ($key->estado == "Cancelado") {
+                                            if ($key['estado'] == "Cancelado") {
                                                 $color = "text-danger";
-                                            } elseif ($key->estado == "Completado") {
+                                            } elseif ($key['estado'] == "Completado") {
                                                 $color = "text-info";
                                             }
                                             
-                                            echo $color; ?>"><?php echo $key->estado ?>
+                                            echo $color; ?>"><?php echo $key['estado'] ?>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url().'/view_mas_informacion_cita/' . $key->id_cita ?>" class="btn btn-info btn-sm text-white">Más Información
+                                    <a href="<?php echo base_url().'/view_mas_informacion_cita/' . $key['id_cita'] ?>" class="btn btn-info btn-sm text-white">Más Información
                                     <i class="fa-solid fa-circle-info fa-lg"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url().'/view_editar_cita/' . $key->id_cita ?>" class="btn btn-warning btn-sm text-white">Editar
+                                    <a href="<?php echo base_url().'/view_editar_cita/' . $key['id_cita'] ?>" class="btn btn-warning btn-sm text-white">Editar
                                         <i class="fa-solid fa-pen-to-square fa-lg"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="<?php echo base_url().'/eliminar_cita/' . $key->id_cita ?>" class="btn btn-danger btn-sm">Eliminar
+                                    <a href="<?php echo base_url().'/eliminar_cita/' . $key['id_cita'] ?>" class="btn btn-danger btn-sm">Eliminar
                                         <i class="fa-solid fa-circle-minus fa-lg"></i>
                                     </a>
                                 </td>

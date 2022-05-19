@@ -64,6 +64,7 @@ Doctores View - Más Información
 
 <?= $this->section('view_title'); ?>
 Doctores
+<i class="fa-solid fa-user-doctor"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -72,7 +73,7 @@ Doctores
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h6>Más Información Registro: Doctores</h6>
+            <h4>Más Información Registro: Doctores</h4>
             <hr class="hr_black_5">
             <h3 class="font-weight-bold text-center mb-4 mt-4">Información Primaria</h3>
             

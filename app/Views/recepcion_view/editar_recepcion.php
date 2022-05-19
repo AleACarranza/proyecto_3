@@ -64,6 +64,7 @@ Recepción View - Actualizar Registro
 
 <?= $this->section('view_title'); ?>
 Recepción
+<i class="fa-solid fa-bell-concierge"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -72,7 +73,7 @@ Recepción
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h6>Actualizar Registro: Recepción</h6>
+            <h4>Actualizar Registro: Recepción</h4>
             <hr class="hr_black_5">
             <h3 class="font-weight-bold text-center mb-4 mt-4">Información Primaria</h3>
             <form class="d-flex flex-column" method="POST" action="<?php echo base_url(). '/updateRecepcionInfo' ?> ">

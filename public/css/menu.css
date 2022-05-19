@@ -1,0 +1,17 @@
+.img-small{
+    width: 100px;
+    height: 100px;
+}
+
+.fit-jala {
+    width: fit-content !important;
+}
+
+.hr_black {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.hr_black_5 {
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+}
+
