@@ -110,10 +110,14 @@ class PacientesController extends BaseController
         $PacienteGeneralInfo = new PacientesCRUDModel();
         $InfoDataGeneral = $PacienteGeneralInfo->getPacienteGeneralInfo($dataGeneral);
 
+        $TratamientosPacienteInfo = new PacientesCRUDModel();
+        $InfoTratamientos = $TratamientosPacienteInfo->getTratamientoInfoById($data);
+
         $datosPaciente = [
-            "datos"           => $InfoData,
-            "datos_dom"       => $InfoDataDom,
-            "datos_generales" => $InfoDataGeneral
+            "datos"              => $InfoData,
+            "datos_dom"          => $InfoDataDom,
+            "datos_generales"    => $InfoDataGeneral,
+            "datos_tratamientos" => $InfoTratamientos,
         ];
 
         return view('pacientes_view/mas_informacion_paciente', $datosPaciente);

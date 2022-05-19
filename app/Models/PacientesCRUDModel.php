@@ -15,6 +15,13 @@
             return $DoctoresInfoPrimaria->getResult();
         }
 
+        public function getTratamientoInfoById($id_paciente) {
+            $TratamientoInfoById = $this->db->table('tratamiento');
+            $TratamientoInfoById->where($id_paciente);
+
+            return $TratamientoInfoById->get()->getResultArray();
+        }
+
         // *********************** INSERTAR (C) INFORMACIÓN PACIENTES ******************************
         public function insertPacienteDomInfo($datos_paciente_domicilio) {
             $DatosDom = $this->db->table('paciente_domicilio');
