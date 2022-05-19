@@ -76,6 +76,7 @@ Pacientes View
 
 <?= $this->section('view_title'); ?>
 Pacientes
+<i class="fa-solid fa-user-pen fa-sm"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>

@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/public/css/bootstrap/bootstrap.css">
 
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/menu.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/public/css/login/login.css">
 
     <title><?= $this->renderSection('titulo') ?></title>
@@ -29,6 +30,8 @@
       let mensaje = '<?php echo $mensaje ?>'
       if (mensaje == '0') {
         swal('Hay un error', 'Las credenciales son invalidas', 'error')
+      } else if(mensaje == '2') {
+        swal('Hay un error', 'Tu Usuario esta Inactivo', 'error')
       }
 
     </script>

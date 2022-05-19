@@ -53,7 +53,10 @@
     <h2 class="font-coolvetica ml-2 font-weight-bold">Salud Bajio Dental</h2>
   </div>
 
-  <h2>Usuarios y Roles</h2>
+  <div class="d-flex flex-row align-items-center">
+    <h2>Usuarios y Roles</h2>
+    <i class="fa-solid fa-user-group fa-xl ml-1"></i>
+  </div>
 
   <ul class="nav justify-content-end">
     <li class="nav-item h1">
@@ -117,6 +120,8 @@
     <script src="<?php echo base_url(); ?>/public/js/jquery-3.6.0.min.js"></script>
     <script src="<?php echo base_url(); ?>/public/js/popper.min.js"></script>
     <script src="<?php echo base_url(); ?>/public/js/bootstrap/bootstrap.js"></script>
+
+	<script src="https://kit.fontawesome.com/cf56801d52.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>

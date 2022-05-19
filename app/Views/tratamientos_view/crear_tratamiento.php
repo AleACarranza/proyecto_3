@@ -18,6 +18,7 @@ Tratamientos View - Crear Registro
 
 <?= $this->section('view_title'); ?>
 Tratamientos
+<i class="fa-solid fa-tooth"></i>
 <?= $this->endSection(); ?>
 
 <?= $this->section('contenido'); ?>
@@ -26,7 +27,7 @@ Tratamientos
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h6>Nuevo Registro: Tratamientos</h6>
+            <h4>Nuevo Registro: Tratamientos</h4>
             <hr class="hr_black_5">
             <form class="d-flex flex-column" enctype ="multipart/form-data" method="POST" action="<?php echo base_url(). '/crearTratamiento' ?> ">
                 <div class="d-flex justify-content-between">
